@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --pmu-green: #004d40;
+  --pmu-red: #e91e63;
+  --foreground-rgb: 0, 0, 0;
+  --background-rgb: 255, 255, 255;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.bg-pmu-green {
+  background-color: var(--pmu-green);
+}
+
+.bg-pmu-red {
+  background-color: var(--pmu-red);
+}
+
+.text-pmu-green {
+  color: var(--pmu-green);
+}
+
+.text-pmu-red {
+  color: var(--pmu-red);
+}
+
+.border-pmu-green {
+  border-color: var(--pmu-green);
+}
+
+.border-pmu-red {
+  border-color: var(--pmu-red);
+}
+
+.hover\:bg-pmu-green-dark:hover {
+  background-color: #003a30;
+}
+
+.hover\:bg-pmu-red-dark:hover {
+  background-color: #c2185b;
+}
